@@ -2,14 +2,7 @@
     font-family: "Norse";
     src: url("https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf");
 } 
-@keyframes moveUp {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-20px);
-    }
-  }
+
 *{
     margin: 0;
     padding: 0;
@@ -23,6 +16,8 @@ body{
     display: flex;
     flex: 4;
 }
+
+
 .right-side{
     display: flex;
     flex-direction: column;
@@ -33,27 +28,29 @@ img{
     width: 100%;
 }
 .rightup{
-    flex: 1;
+    flex: 5;
 }
 .rightmid{
-    flex: 1;
+    flex: 6;
     background: white;
     margin-top: 4vh;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
     display: flex;
 }
 .rightdown{
-    flex: 1;
+    flex: 5;
 }
 .firstp{
-    font-family: Norse;
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
     position: relative;
     left: 4%;
     top: 50%;
     font-size: 1.2rem;
 }
 .secondp{
-    font-family: Norse;
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
     position: relative;
     left: 4%;
     top: 60%;
@@ -62,23 +59,140 @@ img{
 em{
     padding-right: 3px;
 }
-.lets{
+h1 { 
     position: relative;
     top: 7%;
     left: 4%;
-    height: 57px;
+    white-space: nowrap;
+    font-size: 1.5rem;
 }
-.do{
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0.67em 0;
-    display: inline;
-    padding-left: 3px;
-    position: relative;
+form{
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+    padding-right: 20%;
+    max-width: 557.484px;
 }
-.do:hover{
-    display: inline-block;
-    padding-left: 3px;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+label {
+    font-size: small;
+    color: gray;
+}
+
+.form-group:focus-within label {
+    font-size: medium;
+    color: black;
+}
+
+input {
+    height: 1.2rem;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+button {
     position: relative;
-    animation: moveUp 0.5s ease-in-out forwards;
+    top: 18%;
+    left: 10%;
+}
+
+
+button {
+  background-color: rgb(32, 209, 32);
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+p#tolog {
+    position: relative;
+    top: 27%;
+    left: 9%;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#bg{
+    z-index: -1;
+}
+
+.bg-img {
+    width: 100%;
+    display: block;
+  }
+  
+.top-img1 {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 10%; 
+    pointer-events: none; 
+    background-color: black;
+    width: 36.36363636363636vw;
+    height: 15vh;
+}
+
+.top-img2 {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 10%; 
+    pointer-events: none; 
+    width: 36.36363636363636vw;
+    height: 15vh;
+}
+
+.top {
+    position: relative;
+    top: 0;
+    width: 10vw;
+    left: calc(((100% - 10vw) / 2) - 8vw);
+    opacity: 1;
+    height: 14vh;
+    margin: 0.5vh 0 0.5vh 0;
+}
+
+#op {
+    opacity: 0.5;
+}
+
+.outofword {
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: calc(((100% - 10vw) / 2) + 2vw); 
+    pointer-events: none; 
+    width: 36.36363636363636vw;
+    font-size: 13vh;
+    font-family: Norse;
 }

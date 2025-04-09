@@ -5,22 +5,55 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="left-side"><img src="/assets/halie-west-25xggax4bSA-unsplash.jpg" alt=""></div>
+    <div class="left-side">
+     <img id="bg"
+      src="/assets/halie-west-25xggax4bSA-unsplash.jpg" alt="" class="bg-img">
+     <div id="op" class="top-img1"></div>
+     <div class="top-img2"><img class="top-img2 top" src="/assets/odin-lined.png" alt=""><p class="outofword">odin</p></div>
+     </div>
     <div class="right-side">
         <div class="rightup">
-            <p class="firstp">This is not a real online service! You know you need something </br>
-            like this in your life to help you realize your deepest dreams. </br>
-                Sign up <em>now </em>to get started.</p>
+            <p class="firstp">
+                This is not a real online service! You know you need something <br>
+                like this in your life to help you realize your deepest dreams. <br>
+                Sign up <em>now</em> to get started.
+            </p>
             <p class="secondp">you <em>know</em> you want to</p>
         </div>
         <div class="rightmid">
-           <div class="lets">
-            <div class="do">Let's</div>
-            <div class="do">do</div>
-            <div class="do">this!</div>
+           <h1>Let's do this!</h1>
+           <form action="#" id="signupForm">
+                <div class="form-group">
+                     <label for="first_name">FIRST NAME</label>
+                     <input type="text" id="first_name" name="first_name">
+                </div>
+                <div class="form-group">
+                     <label for="last_name">LAST NAME</label>
+                     <input type="text" id="last_name" name="last_name">
+                </div>
+                <div class="form-group">
+                     <label for="email">EMAIL</label>
+                     <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                     <label for="phone_number">PHONE NUMBER</label>
+                     <input type="tel" id="phone_number" name="phone_number">
+                </div>
+                <div class="form-group">
+                     <label for="password">PASSWORD</label>
+                     <input type="password" id="password" name="password">
+                </div>
+                <div class="form-group">
+                     <label for="confirm_password">CONFIRM PASSWORD</label>
+                     <input type="password" id="confirm_password" name="confirm_password">
+                </div>
+           </form>
         </div>
-        </div>
-        <div class="rightdown"></div>
+        <div class="rightdown">
+            <!-- Additional content here -->
+               <button type="submit" form="signupForm">Create Account</button>
+               <p id="tolog">Already have an account? <a href="#">Log in</a></p>
+          </div>
     </div>
 </body>
 </html>
